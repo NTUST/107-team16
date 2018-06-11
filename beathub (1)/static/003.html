@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+  <head>
+<style>body{
+font-family: 'Noto Sans TC', sans-serif;
+}</style>
+ <!-- jQuery.js v1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.jss"></script>
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+
+<!-- fullPage.js v2.9.5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    <!-- Animate.css v3.5.2 -->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!-- Headroom.js v0.9.4 -->
+  <script type="text/javascript" src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+<script src="jquery.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Beathub</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+  
+  </head>
+
+  <body>
+
+
+
+
+
+<div id="example">
+  <div class="section"><font color="white" font size="200"> 00</font>
+  <img src="top.png" width="1200" height="682" >  
+  </div>
+  <div class="section"><font color="white" font size="200"> 12346</font></div>
+    <body background="s1-n.jpg">  
+  <div class="section"><font color="white" font size="200"> 12345</font></div>
+    <body background="s1-n.jpg"> 
+  <div class="section"><font color="white" font size="200"> 12345</font></div>
+    <body background="s1-n.jpg">  
+</div>
+<script>
+  $( "#example" ).fullpage({
+    // 參數設定[註1]
+    navigation: true, // 顯示導行列
+    navigationPosition: "right" // 導行列位置
+  });
+</script>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav-f">
+      <div class="container">
+      <img src="logo.png" width="180" height="30" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">首頁
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="001.html">搖滾音樂</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="002.html">電子音樂</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="003.html">嘻哈音樂</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="004.html">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="005.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BeatHub@ntust 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    var elem = document.getElementById( "nav-f" )
+    var headroom = new Headroom(elem, {
+      "offset": 120, // 當滾輪到哪時，取消固定
+      "scroller": window, // 滾輪
+      "classes": {
+        "initial": "animated", // 初始的類別
+        "pinned": "fadeIn", // 固定時新增的類別(這裡運用Animate.css的類別)
+        "unpinned": "fadeOut", // 取消固定時新增的類別(這裡運用Animate.css的類別)
+        "top": "headroom--top", // 當滾輪在最上面時新增的類別
+        "notTop": "headroom--not-top", // 當滾輪不在最上面時新增的類別
+        "bottom": "headroom--bottom", // 當滾輪在最下面時新增的類別
+        "notBottom": "headroom--not-bottom" // 當滾輪不在最下面時新增的類別
+      },
+      onPin: function() { 
+        // 固定時觸發的事件
+      },
+      onUnpin: function() { 
+        // 取消固定時觸發的事件
+      },
+      onTop: function() { 
+        // 當滾輪在最上面時觸發的事件
+      },
+      onNotTop: function() { 
+        // 當滾輪不在最上面時觸發的事件
+      },
+      onBottom: function() { 
+        // 當滾輪在最下面時觸發的事件
+      }, 
+      onNotBottom: function() { 
+        // 當滾輪不在最下面時事件
+      }
+    });
+    headroom.init();
+  </script>
+
+
+</html>

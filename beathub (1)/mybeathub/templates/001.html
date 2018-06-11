@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="utf-8">
+
+  <head>
+    <style>#fp-nav ul li a.active span,  
+.fp-slidesNav ul li a.active span {  
+    background: #fff; /*这里设置的是活动导航的颜色*/  
+}  
+#fp-nav ul li a span,  
+.fp-slidesNav ul li a span {  
+    border: 1px solid #fff;/*这里设置的是非活动导航的颜色*/  
+}  
+
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-1 {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-2 {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  -webkit-transform: rotate(45deg) translateX(-23%);
+          transform: rotate(45deg) translateX(-23%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.arrow:after {
+  -webkit-transform: rotate(-45deg) translateX(23%);
+          transform: rotate(-45deg) translateX(23%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 75%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+</style>
+ <!-- jQuery.js v1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.jss"></script>
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+
+<!-- fullPage.js v2.9.5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    <!-- Animate.css v3.5.2 -->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!-- Headroom.js v0.9.4 -->
+  <script type="text/javascript" src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+<script src="{ % static "vendor/jquery/jquery.js" %}"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{ % static "css/style.css" & }" >
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/animate-complement.css">
+
+    <title>Trance</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/full-slider.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    
+
+  
+  </head>
+
+  <body>
+
+
+
+<div id="example">
+  <div class="section  " style="letter-spacing:5px;">
+    <font color="white" font size="7" text-align=“center”  > <center>Trance</br></font> 
+    <font color="white" font-size="4" text-align=“center”  > <center>Trance的中文意思是恍惚、出神、狂喜是用來表示一種精神狀態</br>而當初Trance這個曲風在慢慢成形之時，</br>也確實是為了用音樂來模擬這樣的狀態。</center></font>
+    <div class="arrow arrow-1"></div>
+<div class="arrow arrow-2"></div>
+    <body style="background-image: url(/static/s1-n.jpg)" >  
+  </div>
+  <div class="section"><font color="white" font size="4">  
+        <div class="slide"><center>在 90 年代的歐洲夜店 MDMA 開始盛行而這某種程度確實也影響了 Trance 的發展，</br>為了讓舞客在進入恍惚狀態的同時保持興奮感，還有讓情緒更加激昂，</br>所以 Trance 才會慢慢發展出較 “慢”且緩和的旋律最後演變成一段很長且注重情緒鋪陳的 Breakdown。</br>而在那之後之後通常就會伴隨著一串連擊的小鼓還有 build up 讓你進入迷幻又充滿能量的第二段。</br></center>  </font></div>
+        <div class="slide"><font color="white" font size="4"> <center>Trance 最一剛開始在歐洲發跡，</br>80 年代末當時 House 還有 Techno 在那邊非常受歡迎。</br>而有一部分的 House 越來越著重在旋律的部分，加上 Acid House 的出現，三者(House, Techno, Acid House)</br>相輔相成互相影響下慢慢的產生了最原始的 Trance (但當時這個名稱還沒出現)。</center></font></div>
+  
+    <div class="arrow arrow-1"></div>
+<div class="arrow arrow-2"></div>
+
+ </br></br>
+
+</div> 
+  <div class="section section3"><font color="white" font size="7"><center> 90 年代初期也因此產生了幾首代表性作品，<br>他們也可以說是 Trance 的始祖。</br>一起來聽聽看吧！</center>
+</font>   <div class="arrow arrow-1"></div>
+<div class="arrow arrow-2"></div></div>
+  <div class="section"><font color="white" font size="200"> <center><iframe width="800" height="450" src="https://www.youtube.com/embed/wfWMv8Y1V5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center></br></font></div>
+</div>
+<script>
+  $( "#example" ).fullpage({
+    // 參數設定[註1]
+sectionsColor: ['', '#4BBFC3', '#7BAABE','']
+  }); 
+ 
+</script>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="example">
+      <div class="container">
+      <img src="{% static "logo.png" %}" width="180" height="30" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+             <a class="nav-link" href="/index">首頁
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  電子音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <a class="dropdown-item" href="/index/001.html">TRANCE</a>
+    <a class="dropdown-item" href="/index/001-1.html">DUBSTEP</a>
+    <a class="dropdown-item" href="/index/001-2.html">HOUSE</a>
+  </div>
+</div>
+                       <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  嘻哈音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/index/002.html">HIPHOP</a>
+    <a class="dropdown-item" href="/index/002-1.html">LOFI  HIPHOP</a>
+    <a class="dropdown-item" href="/index/002-2.html">EMOTIONAL RAP</a>
+  </div>
+</div>
+             <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  搖滾音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/index/003.html">Alternative rock</a>
+    <a class="dropdown-item" href="/index/003-1.html"> HARD ROCK</a>
+    <a class="dropdown-item" href="/index/003-2.html"> POP ROCK</a>
+  </div>
+</div>
+            <li class="nav-item">
+            {% if request.user.is_authenticated %}
+              <a class="nav-link" href="/contactus">聯絡我們</a>
+              {% else %}
+              <a class="nav-link" href="/accounts/login/">聯絡我們</a>
+              {% endif %}
+            </li>
+            
+
+{% if request.user.is_authenticated %}
+            <p style="color: white; padding: 5px; ">
+                {{request.user}} 您好
+                 <li class="nav-item">
+                <a  class="nav-link" href="/accounts/logout/">登出</a>
+              </li>
+            </p>
+        {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="/accounts/login/">登入</a>
+          </li>
+        {% endif %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BeatHub@ntust 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+   <script src="{%static "vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{%static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+    <script>
+    var elem = document.getElementById( "example2" )
+    var headroom = new Headroom(elem, {
+      "offset": 120, // 當滾輪到哪時，取消固定
+      "scroller": window, // 滾輪
+      "classes": {
+        "initial": "animated", // 初始的類別
+        "pinned": "fadeIn", // 固定時新增的類別(這裡運用Animate.css的類別)
+        "unpinned": "fadeOut", // 取消固定時新增的類別(這裡運用Animate.css的類別)
+        "top": "headroom--top", // 當滾輪在最上面時新增的類別
+        "notTop": "headroom--not-top", // 當滾輪不在最上面時新增的類別
+        "bottom": "headroom--bottom", // 當滾輪在最下面時新增的類別
+        "notBottom": "headroom--not-bottom" // 當滾輪不在最下面時新增的類別
+      },
+      onPin: function() { 
+        // 固定時觸發的事件
+      },
+      onUnpin: function() { 
+        // 取消固定時觸發的事件
+      },
+      onTop: function() { 
+        // 當滾輪在最上面時觸發的事件
+      },
+      onNotTop: function() { 
+        // 當滾輪不在最上面時觸發的事件
+      },
+      onBottom: function() { 
+        // 當滾輪在最下面時觸發的事件
+      }, 
+      onNotBottom: function() { 
+        // 當滾輪不在最下面時事件
+      }
+    });
+    headroom.init();
+  </script>
+  </body>
+
+</html>

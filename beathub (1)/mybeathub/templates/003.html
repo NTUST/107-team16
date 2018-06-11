@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="utf-8">
+
+  <head>
+    <style>#fp-nav ul li a.active span,  
+.fp-slidesNav ul li a.active span {  
+    background: #fff; /*这里设置的是活动导航的颜色*/  
+}  
+#fp-nav ul li a span,  
+.fp-slidesNav ul li a span {  
+    border: 1px solid #fff;/*这里设置的是非活动导航的颜色*/  
+}  
+
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-1 {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-2 {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  -webkit-transform: rotate(45deg) translateX(-23%);
+          transform: rotate(45deg) translateX(-23%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.arrow:after {
+  -webkit-transform: rotate(-45deg) translateX(23%);
+          transform: rotate(-45deg) translateX(23%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 75%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+</style>
+ <!-- jQuery.js v1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.jss"></script>
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+
+<!-- fullPage.js v2.9.5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    <!-- Animate.css v3.5.2 -->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!-- Headroom.js v0.9.4 -->
+  <script type="text/javascript" src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+<script src="{ % static "vendor/jquery/jquery.js" %}"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{% static "css/style.css" & }" >
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/animate-complement.css">
+
+    <title>Site</title>
+
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    
+
+  
+
+  
+  </head>
+
+  <body>
+
+
+
+
+
+<div id="example">
+  <div class="section section1" style="letter-spacing:5px;">
+    <font color="white" font size="7" text-align=“center”  > <center>Alternative rock</br></font> 
+    <font color="white" font-size="4" text-align=“center”  > <center>另類搖滾（英語：Alternative rock），</br>也被稱為另類音樂或替代搖滾或替代音樂，簡稱替代或另類。</br>是搖滾音樂中的一種音樂類別，源於1980年代的地下獨立音樂，</br>並在1990年代到2000年代開始流行。</br>Alternative這個詞意味著有別於主流音樂，和主流音樂是區隔開來的，</br>另類搖滾則是有別於主流搖滾樂，主要體現在獨特的吉他表現形式，顛覆性的歌詞和一種輕蔑漠不關心的態度。</br>另類搖滾原本的範圍是比較廣的包括不同的聲音表現形式，</br>不同的社會背景，文化背景。</center></font>
+    <div class="arrow arrow-1"></div>
+<div class="arrow arrow-2"></div>
+ <body style="background-image: url(/static/s2-nn.jpg)" >    
+  </div>
+  <div class="section"><font color="white" font size="4">  
+        <div class="slide"><center>在1980年代後期，隨著雜誌報導，</br>大學校園廣播的唱片播放和一些口頭宣傳強調了另類搖滾的多樣性與差異性，</br>並幫忙定義了其中不同的音樂風格（比如哥德搖滾，噪音流行，獨立搖滾，獨立流行，油漬搖滾，工業搖滾，嘻哈搖滾，和另類嘻哈）。</br>大部分的子分類都有自己的聽眾，</br>其中的一些有代表性的樂團像Hüsker Dü 和 R.E.M.甚至簽約了唱片公司。</br>然而，在當時相對於其他的類別的搖滾樂和流行樂，大部分商業另類搖滾樂團的成就都是有限的。</br>有些作品依然被歸為個人作品，只有少部分的廣播，電視媒體會播放他們的歌。</br>在1990年代，隨著超脫樂團帶來的突破性的影響，油漬搖滾和英倫搖滾運動的普及，另類搖滾逐漸被大眾接受，變成了一種主流音樂，</br>許多的另類搖滾樂團也因此取得了商業上的成功。</br></center>  </font></div>
+        <div class="slide"><font color="white" font size="4"> <center>「alternative」這個單字的本意「可選擇的」，</br>在1980年代也被用來指在獨立唱片廠牌旗下的龐克搖滾風格樂團，</br>他們和當時的主流音樂類型並不相同。</br>作為一種特定的音樂類型，另類搖滾自1980年代以來集合了許多獨立音樂的子類型，</br>例如油漬搖滾、獨立搖滾、英式搖滾、哥德搖滾等。</center></font></div>
+  
+<script>
+  $( "#example" ).fullpage({
+    // 參數設定[註1]
+sectionsColor: ['', '#4BBFC3', '#7BAABE','']
+  }); 
+ 
+</script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="example">
+      <div class="container">
+      <img src="{% static "logo.png" %}" width="180" height="30" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">首頁
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  電子音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <a class="dropdown-item" href="/index/001.html">TRANCE</a>
+    <a class="dropdown-item" href="/index/001-1.html">DUBSTEP</a>
+    <a class="dropdown-item" href="/index/001-2.html">HOUSE</a>
+  </div>
+</div>
+                       <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  嘻哈音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/index/002.html">HIPHOP</a>
+    <a class="dropdown-item" href="/index/002-1.html">LOFI  HIPHOP</a>
+    <a class="dropdown-item" href="/index/002-2.html">EMOTIONAL RAP</a>
+  </div>
+</div>
+             <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  搖滾音樂
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/index/003.html">Alternative rock</a>
+    <a class="dropdown-item" href="/index/003-1.html"> HARD ROCK</a>
+    <a class="dropdown-item" href="/index/003-2.html"> POP ROCK</a>
+  </div>
+</div>
+            <li class="nav-item">
+              {% if request.user.is_authenticated %}
+              <a class="nav-link" href="/contactus">聯絡我們</a>
+              {% else %}
+              <a class="nav-link" href="/accounts/login/">聯絡我們</a>
+              {% endif %}
+            </li>
+            
+            
+{% if request.user.is_authenticated %}
+            <p style="color: white; padding: 5px; ">
+                {{request.user}} 您好
+                 <li class="nav-item">
+                <a  class="nav-link" href="/accounts/logout/">登出</a>
+              </li>
+            </p>
+        {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="/accounts/login/">登入</a>
+          </li>
+        {% endif %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BeatHub@ntust 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+ <script src="{%static "vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{%static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+    <script>
+    var elem = document.getElementById( "example2" )
+    var headroom = new Headroom(elem, {
+      "offset": 120, // 當滾輪到哪時，取消固定
+      "scroller": window, // 滾輪
+      "classes": {
+        "initial": "animated", // 初始的類別
+        "pinned": "fadeIn", // 固定時新增的類別(這裡運用Animate.css的類別)
+        "unpinned": "fadeOut", // 取消固定時新增的類別(這裡運用Animate.css的類別)
+        "top": "headroom--top", // 當滾輪在最上面時新增的類別
+        "notTop": "headroom--not-top", // 當滾輪不在最上面時新增的類別
+        "bottom": "headroom--bottom", // 當滾輪在最下面時新增的類別
+        "notBottom": "headroom--not-bottom" // 當滾輪不在最下面時新增的類別
+      },
+      onPin: function() { 
+        // 固定時觸發的事件
+      },
+      onUnpin: function() { 
+        // 取消固定時觸發的事件
+      },
+      onTop: function() { 
+        // 當滾輪在最上面時觸發的事件
+      },
+      onNotTop: function() { 
+        // 當滾輪不在最上面時觸發的事件
+      },
+      onBottom: function() { 
+        // 當滾輪在最下面時觸發的事件
+      }, 
+      onNotBottom: function() { 
+        // 當滾輪不在最下面時事件
+      }
+    });
+    headroom.init();
+  </script>
+  </body>
+
+</html>
